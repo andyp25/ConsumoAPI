@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONSUMO DE APIS</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container mt-5 mb-4 d-flex flex-column align-items-center">
+    <h1 class="text-center mb-4">CONSUMO DE APIS</h1>
+    <hr class="w-100 mb-4">
+
+    <div class="w-100" style="max-width: 500px;">
+      <button id="btnMostrarGaleria" class="btn btn-custom btn-galeria shadow">
+        GALERÍA DE IMÁGENES
+      </button>
+      <section id="seccionGaleria" class="seccion-oculta mb-5 w-100">
+        <h2>GALERÍA DE IMÁGENES</h2>
+        <div id="galeria" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 mt-3"></div>
+      </section>
+
+      <button id="btnMostrarClima" class="btn btn-custom btn-clima shadow">
+        CLIMA
+      </button>
+      <section id="seccionClima" class="seccion-oculta mb-5 w-100">
+        <h2>CLIMA DE CADA CIUDAD</h2>
+        <input type="text" id="ciudad" class="form-control mb-2" placeholder="Ej: Medellín, Bogotá">
+        <button class="btn mb-3" id="btnClima">Buscar Clima</button>
+        <div id="climaResultado" class="border rounded p-3"></div>
+      </section>
+
+      <button id="btnMostrarPokedex" class="btn btn-custom btn-pokedex shadow">
+        POKÉMON
+      </button>
+      <section id="seccionPokedex" class="seccion-oculta w-100 mb-5">
+        <h2>POKÉMON</h2>
+        <input type="text" id="pokemon" class="form-control mb-2" placeholder="Ej: pikachu, charmander">
+        <button class="btn mb-3" id="btnPokedex">Buscar Pokémon</button>
+        <div id="pokedexResultado" class="border rounded p-3"></div>
+      </section>
+    </div>
+  </div>
+      
+  <script src="script.js"></script>
+</body>
+</html>
